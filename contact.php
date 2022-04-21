@@ -21,3 +21,19 @@ else{
     header("location:index.php");
 }
 ?>
+
+<!-- php codes -->
+
+            <?php
+
+              $message = "";
+              if (isset($_GET['error'])) {
+                $message = "Please fill the details.";
+                echo '<div class="alert alert-danger">'.$message.'</div>';
+              }
+              if (isset($_GET['success'])) {
+                $message = "Your message has been send.";
+                echo '<div class="alert alert-success">'.$message.'</div>';
+              }
+
+            ?>
