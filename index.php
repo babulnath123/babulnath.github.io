@@ -436,23 +436,6 @@
             <div class="form-group mt-3">
               <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
             </div>
-
-            <!-- php codes -->
-
-            <?php
-
-              $message = "";
-              if (isset($_GET['error'])) {
-                $message = "Please fill the details.";
-                echo '<div class="alert alert-danger">'.$message.'</div>';
-              }
-              if (isset($_GET['success'])) {
-                $message = "Your message has been send.";
-                echo '<div class="alert alert-success">'.$message.'</div>';
-              }
-
-            ?>
-
             <div class="text-center my-3">
               <button type="submit" name="submit" class="btn btn-outline-dark mx-3">Send Message</button>
             </div>
